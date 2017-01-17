@@ -1,0 +1,1238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3j4hyp0fs9oiz</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>TelaInicial</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Indio" sid="374337756220777">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="LifeIndio" sid="781518034228991" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="288120923427267">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="146567384656039">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="503392775231877" speed="8">
+                    <frame duration="1" hotspotX="0.536424" hotspotY="0.972332" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Indio_idle.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="117608458539459" speed="8">
+                    <frame duration="1" hotspotX="0.537234" hotspotY="0.973077" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Walk1.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.537234" hotspotY="0.972763" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Walk2.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.537234" hotspotY="0.972763" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Walk3.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.537234" hotspotY="0.973485" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Walk4.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.536842" hotspotY="0.972763" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Walk5.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.537234" hotspotY="0.972763" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Walk6.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Shot" pingpong="0" repeatcount="1" repeatto="0" sid="695490658248427" speed="5">
+                    <frame duration="1" hotspotX="0.536723" hotspotY="0.972112" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Shot2.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.537688" hotspotY="0.972222" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Shot3.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.536145" hotspotY="0.972112" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Shot4.png">
+                        <collision-poly>
+                            <point x="0.258279" y="0.237154" />
+                            <point x="0.834438" y="0.241107" />
+                            <point x="0.675497" y="0.55336" />
+                            <point x="0.662252" y="0.731225" />
+                            <point x="0.662251" y="0.964427" />
+                            <point x="0.377484" y="0.968379" />
+                            <point x="0.364239" y="0.73913" />
+                            <point x="0.384106" y="0.561265" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarreiraEsquerda" sid="237193659373824">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="327097355201632">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="362341571382504" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarreiraDireita" sid="219496991139288">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="650859960217651">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785923280510871" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cacador" sid="587185044008545">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="814744002624283">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="210913862366089">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="931116414406353">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="506260584277889" speed="5">
+                    <frame duration="1" hotspotX="0.502439" hotspotY="0.986339" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Caçador\Idle.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Shot" pingpong="0" repeatcount="1" repeatto="0" sid="901610794152244" speed="5">
+                    <frame duration="1" hotspotX="0.504065" hotspotY="0.986339" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Caçador\Shot.png" />
+                    <frame duration="1" hotspotX="0.501901" hotspotY="0.986339" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Caçador\Shot2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="902672506648986">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Flecha" sid="416189123849278">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="996378768772379">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577598520763827" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Indio\Flecha.png">
+                        <collision-poly>
+                            <point x="0.0644531" y="0.3125" />
+                            <point x="0.5" y="0.460938" />
+                            <point x="0.816406" y="0.304688" />
+                            <point x="0.931641" y="0.46875" />
+                            <point x="0.818359" y="0.65625" />
+                            <point x="0.5" y="0.515625" />
+                            <point x="0.0664063" y="0.703125" />
+                            <point x="0.0878906" y="0.492188" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoPlay" sid="931001618734206">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="906556193788111" speed="5">
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\PLAY.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="640515725681486">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="BotaoLevel1" sid="272219783254478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616964527534555" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500736" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\FundoFloresta.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoLevel2" sid="484736845403616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945053048242412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\FundoCaverna.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoLevel3" sid="151753075967872">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505510782494587" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\FundoCavernaFinal.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mundo" sid="693553398519251">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="361741888075833">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\../Tileset/PlatformTiles_brownNature_ByEris/Tiles 32x32/Tiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Background" sid="247657398339297">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\../Tileset/PlatformTiles_brownNature_ByEris/Tiles 32x32/Tiles_32x32.png" />
+            <tiles>
+                <tile id="8">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.859375" y="0.0234375" />
+                        <point x="0.203125" y="0.28125" />
+                        <point x="0.015625" y="0.859375" />
+                    </collision-poly>
+                </tile>
+                <tile id="12">
+                    <collision-poly>
+                        <point x="0.148438" y="0.0078125" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.789063" />
+                        <point x="0.726563" y="0.171875" />
+                    </collision-poly>
+                </tile>
+                <tile id="20">
+                    <collision-poly>
+                        <point x="0" y="0.0546875" />
+                        <point x="0.492188" y="0.554688" />
+                        <point x="0.9375" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="23">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.453125" />
+                        <point x="0" y="0.5" />
+                    </collision-poly>
+                </tile>
+                <tile id="24">
+                    <collision-poly>
+                        <point x="0" y="0.0625" />
+                        <point x="1" y="0.5625" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="25">
+                    <collision-poly>
+                        <point x="0.0078125" y="0.5625" />
+                        <point x="0.5" y="0.789063" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="28">
+                    <collision-poly>
+                        <point x="0" y="0.914063" />
+                        <point x="1" y="0.914063" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="30">
+                    <collision-poly>
+                        <point x="0" y="0.03125" />
+                        <point x="1" y="0.546875" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="52">
+                    <collision-poly>
+                        <point x="0.617188" y="0.757813" />
+                        <point x="1" y="0.546875" />
+                        <point x="1" y="1" />
+                        <point x="0.078125" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="53">
+                    <collision-poly>
+                        <point x="0.0078125" y="0.5625" />
+                        <point x="1" y="0.046875" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="54">
+                    <collision-poly>
+                        <point x="0.09375" y="0" />
+                        <point x="1" y="0" />
+                        <point x="0.992188" y="0.789063" />
+                        <point x="0.75" y="0.234375" />
+                    </collision-poly>
+                </tile>
+                <tile id="55">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.875" y="0.0078125" />
+                        <point x="0.164063" y="0.265625" />
+                        <point x="0.0078125" y="0.8125" />
+                    </collision-poly>
+                </tile>
+                <tile id="56">
+                    <collision-poly>
+                        <point x="0.492188" y="0.59375" />
+                        <point x="0.976563" y="0.0859375" />
+                        <point x="1" y="1" />
+                        <point x="0.101563" y="0.976563" />
+                    </collision-poly>
+                </tile>
+                <tile id="60">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.9375" y="0.0703125" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="61">
+                    <collision-poly>
+                        <point x="0.078125" y="0.078125" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="Bala" sid="130408384479316">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="LifeBala" sid="342714688742038" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="231901231889306">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747729626588642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Caçador\Bala.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.26087" />
+                            <point x="0.714286" y="0.26087" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="0.714286" y="0.73913" />
+                            <point x="0.5" y="0.76087" />
+                            <point x="0.261905" y="0.76087" />
+                            <point x="0.166667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Final" sid="682660016916449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="515698848660674" speed="5">
+                    <frame duration="1" hotspotX="0.306452" hotspotY="0.734375" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Tileset\FreeTileset\png\Object\Sign_2.png">
+                        <collision-poly>
+                            <point x="0.290323" y="0.171875" />
+                            <point x="0.5" y="0.203125" />
+                            <point x="0.758065" y="0.234375" />
+                            <point x="0.903226" y="0.34375" />
+                            <point x="0.677419" y="0.53125" />
+                            <point x="0.290323" y="0.546875" />
+                            <point x="0" y="0.546875" />
+                            <point x="0" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Vida1" sid="988338071892548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263725919653872" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\Heart.png">
+                        <collision-poly>
+                            <point x="0.0816667" y="0.0917603" />
+                            <point x="0.5" y="0.140449" />
+                            <point x="0.918333" y="0.0917603" />
+                            <point x="0.963333" y="0.5" />
+                            <point x="0.788333" y="0.762172" />
+                            <point x="0.5" y="1" />
+                            <point x="0.211667" y="0.762172" />
+                            <point x="0.0366667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Vida2" sid="730883657455293">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="338157424800596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\Heart.png">
+                        <collision-poly>
+                            <point x="0.0816667" y="0.0917603" />
+                            <point x="0.5" y="0.140449" />
+                            <point x="0.918333" y="0.0917603" />
+                            <point x="0.963333" y="0.5" />
+                            <point x="0.788333" y="0.762172" />
+                            <point x="0.5" y="1" />
+                            <point x="0.211667" y="0.762172" />
+                            <point x="0.0366667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Vida3" sid="468547956261715">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577494215696168" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\Heart.png">
+                        <collision-poly>
+                            <point x="0.0816667" y="0.0917603" />
+                            <point x="0.5" y="0.140449" />
+                            <point x="0.918333" y="0.0917603" />
+                            <point x="0.963333" y="0.5" />
+                            <point x="0.788333" y="0.762172" />
+                            <point x="0.5" y="1" />
+                            <point x="0.211667" y="0.762172" />
+                            <point x="0.0366667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoPause" sid="310797467262718">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="771307771259821" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\PAUSE ICON.png">
+                        <collision-poly>
+                            <point x="0.00531919" y="0.441624" />
+                            <point x="0.994681" y="0.416244" />
+                            <point x="0.994681" y="0.57868" />
+                            <point x="0.00531919" y="0.553299" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TelaPause" sid="719448492986672">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313153280550953" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\TelaPrincipal.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoContinua" sid="815068431486152">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="783587653955213" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.48" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\PLAY ICON.png">
+                        <collision-poly>
+                            <point x="0.00641026" y="0.502283" />
+                            <point x="0.49359" y="0.251142" />
+                            <point x="0.99359" y="0.497717" />
+                            <point x="0.974359" y="0.488584" />
+                            <point x="0.49359" y="0.748858" />
+                            <point x="0.00641026" y="0.474886" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoReinicia" sid="762429021909942">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952052043592308" speed="5">
+                    <frame duration="1" hotspotX="0.46" hotspotY="0.46" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\REINICIAR.png">
+                        <collision-poly>
+                            <point x="0.0297872" y="0.358491" />
+                            <point x="0.451064" y="0.84434" />
+                            <point x="0.970213" y="0.254717" />
+                            <point x="0.914894" y="0.45283" />
+                            <point x="0.902128" y="0.575472" />
+                            <point x="0.451064" y="0.985849" />
+                            <point x="0.012766" y="0.566038" />
+                            <point x="0.012766" y="0.45283" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoSair" sid="658371368635443">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441797801490301" speed="5">
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.48" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\sair-icone.png">
+                        <collision-poly>
+                            <point x="0.0685976" y="0.0685976" />
+                            <point x="0.487805" y="0.0400152" />
+                            <point x="0.91654" y="0.0590701" />
+                            <point x="0.954649" y="0.487805" />
+                            <point x="0.926067" y="0.926067" />
+                            <point x="0.487805" y="0.954649" />
+                            <point x="0.0590701" y="0.91654" />
+                            <point x="0.0400152" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BotaoProxLevel" sid="582655919340863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="750243098848114" speed="5">
+                    <frame duration="1" hotspotX="0.44" hotspotY="0.48" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\PROX-LEVEL-ICON.png">
+                        <collision-poly>
+                            <point x="0.147368" y="0.109589" />
+                            <point x="0.431579" y="0.0821918" />
+                            <point x="0.968421" y="0.479452" />
+                            <point x="0.431579" y="0.917808" />
+                            <point x="0.0736842" y="0.945205" />
+                            <point x="0.0210526" y="0.479452" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FundoParallax" sid="323362526976818">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121239113810829" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\FundoAumentado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bonus" sid="484494658539952">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997253488365601" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.466667" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\Botoes\Heart.png">
+                        <collision-poly>
+                            <point x="0.0816667" y="0.0917603" />
+                            <point x="0.5" y="0.140449" />
+                            <point x="0.918333" y="0.0917603" />
+                            <point x="0.963333" y="0.5" />
+                            <point x="0.788333" y="0.762172" />
+                            <point x="0.5" y="1" />
+                            <point x="0.211667" y="0.762172" />
+                            <point x="0.0366667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="452346112294326">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="TxLevel" sid="477505933329450">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TerrenoMovel" sid="821532386212047">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="331058724808185">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="384342005202153">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="900977241793929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Tileset\PlatformTiles_brownNature_ByEris\Tiles 32x32\separate png\tile_62.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MundoLevel2" sid="294828018784484">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="985044745926926">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\../Tileset/PlatformTiles_brownNature_ByEris/Tiles 32x32/Tiles_32x32.png" />
+            <tiles>
+                <tile id="8">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.890625" y="0.0078125" />
+                        <point x="0.234375" y="0.25" />
+                        <point x="0.0078125" y="0.75" />
+                    </collision-poly>
+                </tile>
+                <tile id="12">
+                    <collision-poly>
+                        <point x="0.09375" y="0.015625" />
+                        <point x="1" y="0" />
+                        <point x="0.984375" y="0.75" />
+                        <point x="0.789063" y="0.1875" />
+                    </collision-poly>
+                </tile>
+                <tile id="13">
+                    <collision-poly>
+                        <point x="0" y="0.117188" />
+                        <point x="1" y="0.109375" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="20">
+                    <collision-poly>
+                        <point x="0" y="0.03125" />
+                        <point x="0.476563" y="0.554688" />
+                        <point x="0.960938" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="23">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.484375" />
+                        <point x="0" y="0.484375" />
+                    </collision-poly>
+                </tile>
+                <tile id="24">
+                    <collision-poly>
+                        <point x="0" y="0.0625" />
+                        <point x="1" y="0.5625" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="25">
+                    <collision-poly>
+                        <point x="0" y="0.546875" />
+                        <point x="0.46875" y="0.78125" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="28">
+                    <collision-poly>
+                        <point x="0" y="0.976563" />
+                        <point x="0.992188" y="0.976563" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="30">
+                    <collision-poly>
+                        <point x="0" y="0.0625" />
+                        <point x="1" y="0.539063" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="31">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.90625" />
+                        <point x="0" y="0.90625" />
+                    </collision-poly>
+                </tile>
+                <tile id="52">
+                    <collision-poly>
+                        <point x="0.546875" y="0.78125" />
+                        <point x="1" y="0.546875" />
+                        <point x="1" y="1" />
+                        <point x="0.09375" y="0.984375" />
+                    </collision-poly>
+                </tile>
+                <tile id="53">
+                    <collision-poly>
+                        <point x="0" y="0.554688" />
+                        <point x="0.992188" y="0.0546875" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="54">
+                    <collision-poly>
+                        <point x="0.132813" y="0.0234375" />
+                        <point x="1" y="0" />
+                        <point x="0.984375" y="0.742188" />
+                        <point x="0.742188" y="0.226563" />
+                    </collision-poly>
+                </tile>
+                <tile id="55">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.84375" y="0" />
+                        <point x="0.234375" y="0.242188" />
+                        <point x="0" y="0.882813" />
+                    </collision-poly>
+                </tile>
+                <tile id="56">
+                    <collision-poly>
+                        <point x="0.507813" y="0.578125" />
+                        <point x="1" y="0.078125" />
+                        <point x="1" y="1" />
+                        <point x="0.0703125" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="60">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.945313" y="0.0625" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="61">
+                    <collision-poly>
+                        <point x="0.0703125" y="0.109375" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="Anaconda" sid="301028781988887">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="LifeCobra" sid="956102063773077" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="241085082508561">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="922703205149391">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="459548526544120">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306805608232382" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Anaconda\Anaconda1.png">
+                        <collision-poly>
+                            <point x="0.83939" y="0.5" />
+                            <point x="0.899063" y="0.902813" />
+                            <point x="0.5" y="0.981237" />
+                            <point x="0.0822891" y="0.920636" />
+                            <point x="0.488811" y="0.5" />
+                            <point x="0.444057" y="0.425141" />
+                            <point x="0.5" y="0.143528" />
+                            <point x="0.910252" y="0.086493" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Anaconda\Anaconda2.png">
+                        <collision-poly>
+                            <point x="0.83939" y="0.5" />
+                            <point x="0.899063" y="0.902813" />
+                            <point x="0.5" y="0.981237" />
+                            <point x="0.0822891" y="0.920636" />
+                            <point x="0.488811" y="0.5" />
+                            <point x="0.444057" y="0.425141" />
+                            <point x="0.5" y="0.143528" />
+                            <point x="0.910252" y="0.086493" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="209627116126950" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Anaconda\Anaconda3.png">
+                        <collision-poly>
+                            <point x="0.83939" y="0.5" />
+                            <point x="0.899063" y="0.902813" />
+                            <point x="0.5" y="0.981237" />
+                            <point x="0.0822891" y="0.920636" />
+                            <point x="0.488811" y="0.5" />
+                            <point x="0.444057" y="0.425141" />
+                            <point x="0.5" y="0.143528" />
+                            <point x="0.910252" y="0.086493" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Anaconda\Anaconda4.png">
+                        <collision-poly>
+                            <point x="0.83939" y="0.5" />
+                            <point x="0.899063" y="0.902813" />
+                            <point x="0.5" y="0.981237" />
+                            <point x="0.0822891" y="0.920636" />
+                            <point x="0.488811" y="0.5" />
+                            <point x="0.444057" y="0.425141" />
+                            <point x="0.5" y="0.143528" />
+                            <point x="0.910252" y="0.086493" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.130522" hotspotY="0.502488" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Anaconda\Anaconda5.png">
+                        <collision-poly>
+                            <point x="0.901639" y="0.49005" />
+                            <point x="0.925168" y="0.693858" />
+                            <point x="0.66265" y="0.419048" />
+                            <point x="0.363413" y="0.940537" />
+                            <point x="0.0390121" y="0.883085" />
+                            <point x="0.237229" y="0.609221" />
+                            <point x="0.702811" y="0.0241254" />
+                            <point x="0.992581" y="0.3651" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.83939" y="0.5" />
+                            <point x="0.899063" y="0.902813" />
+                            <point x="0.5" y="0.981237" />
+                            <point x="0.0822891" y="0.920636" />
+                            <point x="0.488811" y="0.5" />
+                            <point x="0.444057" y="0.425141" />
+                            <point x="0.5" y="0.143528" />
+                            <point x="0.910252" y="0.086493" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background3" sid="613975243695464">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\../Tileset/PlatformTiles_brownNature_ByEris/Tiles 32x32/Tiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="MundoLevel3" sid="604096988427310">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="691862811331077">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\../Tileset/PlatformTiles_brownNature_ByEris/Tiles 32x32/Tiles_32x32.png" />
+            <tiles>
+                <tile id="23">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.164063" />
+                        <point x="0" y="0.171875" />
+                    </collision-poly>
+                </tile>
+                <tile id="24">
+                    <collision-poly>
+                        <point x="0" y="0.0703125" />
+                        <point x="0.992188" y="0.5625" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="25">
+                    <collision-poly>
+                        <point x="0" y="0.539063" />
+                        <point x="0.421875" y="0.757813" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="60">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.929688" y="0.0859375" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="Mapinguari" sid="131929206063217">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="LifeMapi" sid="134802864330434" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="253467590008961">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="607078189986016">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="717133842114599">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="207723011397310" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.993421" y="0.994186" />
+                            <point x="0.00657895" y="0.994186" />
+                            <point x="0.00657895" y="0.00581395" />
+                            <point x="0.993421" y="0.00581395" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="100590445123942" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Mapinguari\Walk1.png">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Mapinguari\Walk2.png">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="357912210625559" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Mapinguari\Attack3.png">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Mapinguari\Attack4.png">
+                        <collision-poly>
+                            <point x="0.886667" y="0.505882" />
+                            <point x="0.806667" y="0.747059" />
+                            <point x="0.806666" y="0.923529" />
+                            <point x="0.153333" y="0.923529" />
+                            <point x="0.0933333" y="0.629412" />
+                            <point x="0.113333" y="0.370588" />
+                            <point x="0.213333" y="0.170588" />
+                            <point x="0.88" y="0.182353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ImageIntro" sid="121286060670523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895747352087401" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\RESGATE INICIO.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CameraIntro" sid="784145448972477">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="224448757502151">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773036788625627" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ImagemFinal" sid="806785543492938">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398468981178025" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\FIM CAUE.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CameraFinal" sid="396166598391374">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="683252589559604">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392300418730771" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="453625326072038">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="FundoMenu" sid="469259026191640">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758453210773843" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\Adventures of Kaua\Sprites\Sprites Finais\BANNER RESGATE.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TXFloresta" sid="391501887510797">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TXCaverna" sid="550543419834287">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TXFInal" sid="236292529594532">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Level3.xml</layout>
+        <layout>Level2.xml</layout>
+        <layout>Level1.xml</layout>
+        <layout>TelaInicial.xml</layout>
+        <layout>TelaMenu.xml</layout>
+        <layout>Intro.xml</layout>
+        <layout>Final.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>EventL1.xml</event-sheet>
+        <event-sheet>EventInicial.xml</event-sheet>
+        <event-sheet>EventMenu.xml</event-sheet>
+        <event-sheet>Event Intro.xml</event-sheet>
+        <event-sheet>Event Final.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="9" />
+        <global-instance type="Touch" uid="12">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="89">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="Arrow.ogg" />
+        <file name="Shot.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

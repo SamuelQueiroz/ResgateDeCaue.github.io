@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventL1</name>
+    <events>
+        <variable constant="0" name="pause" sid="600871337974261" static="0" type="number">0</variable>
+        <event-group description="" sid="514856079852558" title="Geral">
+            <sub-events>
+                <event-block sid="559833980117629">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="423082249623700" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="700275768896468" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="309055964907083" type="System" />
+                        <action id="7" name="Set mirrored" sid="450812201949294" type="Cacador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="606528016252469" type="Anaconda">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="272334544670136" type="Mapinguari">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="585218626185172">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="608249348299900" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Is outside layout" sid="506777018291732" type="Indio" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="532023440340339" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="367076629658571">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="584978979908878" type="Final">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="673867531918973" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="834148394979754">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="544284577107305" type="Indio">
+                            <param id="0" name="Object">Bonus</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="398713318702172">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="454249852915115" type="Indio">
+                                    <param id="0" name="Instance variable">LifeIndio</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="167185600184801" type="Indio">
+                                    <param id="0" name="Instance variable">LifeIndio</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="349677192831346" type="Bonus" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="894275789110444" title="Indio">
+            <sub-events>
+                <event-block sid="860594948283702">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="550573129217583" type="Indio" />
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="852513517709548" type="Indio" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="596674418119792" type="Indio">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906687238444685">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="354560214720641" type="Indio" />
+                        <condition behavior="Platform" id="0" name="Is moving" sid="933242967644319" type="Indio" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="592060552749498" type="Indio">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="289896271500150">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="955826501833925" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="913745653217030" type="Indio">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="818092295766796">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="153872479040997" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="848657455346379" type="Indio">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="471525110328451">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="916003510533993" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="797695391997990">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="634661551435550" type="Indio" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="235989590036660" type="Indio">
+                                    <param id="0" name="Animation">&quot;Shot&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="912087846773671" type="System">
+                                    <param id="0" name="Object to create">Flecha</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">Indio.X + 5</param>
+                                    <param id="3" name="Y">Indio.Y - 15</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="294925997723560" type="Flecha">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="214319062296337" type="Audio">
+                                    <param id="0" name="Audio file">Arrow</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-3</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="917677804659965">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="618496694064629" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="880786918857935" type="Indio">
+                                    <param id="0" name="Animation">&quot;Shot&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="462558739703439" type="System">
+                                    <param id="0" name="Object to create">Flecha</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">Indio.X + 5</param>
+                                    <param id="3" name="Y">Indio.Y - 15</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="423990729353974" type="Flecha">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="941556568395825" type="Flecha">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="0" name="Play" sid="929168822148585" type="Audio">
+                                    <param id="0" name="Audio file">Arrow</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-3</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="591808162474416">
+                    <conditions>
+                        <condition behavior="Bullet" id="1" name="Compare distance travelled" sid="250565226562765" type="Flecha">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Distance">450</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="979674275123330" type="Flecha" />
+                    </actions>
+                </event-block>
+                <event-block sid="887251862134771">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="975684965678724" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="662612524423563" type="Vida1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="846847743056311" type="Vida2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="131389458739644" type="Vida3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="275351834940319">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="978879279598972" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="313519029907048" type="Vida1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="375969685275171" type="Vida2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="576746044833890" type="Vida3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="441094122217102">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="590099167611236" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="135496534751664" type="Vida1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="966924437017310" type="Vida2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="326773588083867" type="Vida3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="322481004429351">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="139236092283033" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="506593951336458" type="Vida1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="333123406096681" type="Vida2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="904167807488328" type="Vida3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="619923410999712" title="Cacador">
+            <sub-events>
+                <event-block sid="158046999729150">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="944739523826189" type="System">
+                            <param id="0" name="Interval (seconds)">2.0</param>
+                        </condition>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="612079274240793" type="Cacador">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="286136063833197" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="273983704156442" type="System">
+                            <param id="0" name="Object to create">Bala</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">Cacador.X - 15</param>
+                            <param id="3" name="Y">Cacador.Y - 15</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="111890215128487" type="Bala">
+                            <param id="0" name="X">Indio.X</param>
+                            <param id="1" name="Y">Indio.Y - 15</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="728303961318680" type="Bala">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="304570669368055" type="Audio">
+                            <param id="0" name="Audio file">Shot</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="413717789406611" title="Colisoes">
+            <sub-events>
+                <event-block sid="351354868921735">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="238001298878426" type="Flecha">
+                            <param id="0" name="Object">Cacador</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="197023925282260" type="Flecha" />
+                        <action id="-9" name="Destroy" sid="514067018577960" type="Cacador" />
+                    </actions>
+                </event-block>
+                <event-block sid="716342592409219">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="343058491963303" type="Flecha">
+                            <param id="0" name="Object">Bala</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="522505358074653" type="Flecha" />
+                        <action id="-9" name="Destroy" sid="927232447955273" type="Bala" />
+                    </actions>
+                </event-block>
+                <event-block sid="538684785765581">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="535373660830511" type="Bala">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="765660548541357" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="189553182207405" type="Bala" />
+                    </actions>
+                </event-block>
+                <event-block sid="399477292762783">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="307916019200328" type="Flecha">
+                            <param id="0" name="Object">Anaconda</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="933556285296791" type="Flecha" />
+                        <action id="-12" name="Subtract from" sid="187955704576103" type="Anaconda">
+                            <param id="0" name="Instance variable">LifeCobra</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="626041207926559">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="887188557436807" type="Anaconda">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="196010855708015" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="951466644796163">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="146741641528045" type="Mapinguari">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="728442738602152" type="Indio">
+                            <param id="0" name="Instance variable">LifeIndio</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="946771295521644">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="853692504555405" type="Mapinguari">
+                            <param id="0" name="Object">Flecha</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="189142033196048" type="Mapinguari">
+                            <param id="0" name="Instance variable">LifeMapi</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="910409373791697" title="Pause">
+            <sub-events>
+                <event-block sid="361436185974827">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="582334540172289" type="Touch">
+                            <param id="0" name="Object">BotaoPause</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="634330043273066" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="661952002183880" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="878316843609405">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="707014735008950" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="541278096309151" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="325344238326683" type="TelaPause">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="651201934938623" type="BotaoContinua">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="291121237676556" type="BotaoReinicia">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="923346200083123" type="BotaoSair">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="157786034917923" type="BotaoProxLevel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="962757052664002" type="Indio">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="856892651528074" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="951463261986565">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="195108682264805" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="444749007791767" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="677716226054750" type="TelaPause">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="310175489617467" type="BotaoContinua">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="313583613383479" type="BotaoReinicia">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="590742564787093" type="BotaoSair">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="461218949908181" type="BotaoProxLevel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="348737620665824" type="Indio">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="260726453707894" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="260610837431086">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="945152466227742" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="958302635899226" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="285239200989475" type="TelaPause">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="134759682444287" type="BotaoContinua">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="858508318517716" type="BotaoReinicia">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="181560619127669" type="BotaoSair">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="573014059343005" type="BotaoProxLevel">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="590681848082629" type="Indio">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="779916725843423" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="555900313047556">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="298756389175159" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="683454741188449" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="420105816554726" type="TelaPause">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="993009699098949" type="BotaoContinua">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="506386319371849" type="BotaoReinicia">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="483680471750508" type="BotaoSair">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="488230373890467" type="BotaoProxLevel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="644489540408196" type="Indio">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="242697759971157" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="683677479420715">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="964635616435057" type="Touch">
+                            <param id="0" name="Object">BotaoReinicia</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="705545697575208" type="BotaoReinicia" />
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="378102884358285" type="System" />
+                        <action id="-16" name="Wait" sid="820981964985400" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="314849732420756">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="180726995227883" type="Touch">
+                            <param id="0" name="Object">BotaoContinua</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="414875754902507" type="BotaoContinua" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="609526667957580" type="System">
+                            <param id="0" name="Variable">pause</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="649936276827985" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478681968579115">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="528634564361735" type="Touch">
+                            <param id="0" name="Object">BotaoSair</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="751266683370092" type="BotaoSair" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="351954982328014" type="System">
+                            <param id="0" name="Layout">TelaMenu</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="756390084386720" type="System">
+                            <param id="0" name="Seconds">0.100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="332153459098313">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="538961690048630" type="Touch">
+                            <param id="0" name="Object">BotaoProxLevel</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="525105697727142" type="BotaoProxLevel" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="318066702351900">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="628880145559663" type="TxLevel">
+                                    <param id="0" name="Text to compare">&quot;1&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="332934835490669" type="System">
+                                    <param id="0" name="Layout">Level2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="643635297959655" type="System">
+                                    <param id="0" name="Seconds">0.100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="420266508755659">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="331613718860264" type="TxLevel">
+                                    <param id="0" name="Text to compare">&quot;2&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="390064296955662" type="System">
+                                    <param id="0" name="Layout">Level3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="303148649216221" type="System">
+                                    <param id="0" name="Seconds">0.100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="486902323662058">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="514851775222201" type="TxLevel">
+                                    <param id="0" name="Text to compare">&quot;3&quot;</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="568741880477222" type="System">
+                                    <param id="0" name="Layout">Final</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="224760234407390" type="System">
+                                    <param id="0" name="Seconds">0.100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="992580382288046" title="Cobra">
+            <sub-events>
+                <event-block sid="951231018075970">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="593222210685061" type="System">
+                            <param id="0" name="Interval (seconds)">1.5</param>
+                        </condition>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="899793438877784" type="Anaconda">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="225507707054101" type="Anaconda">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="734488185070532">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="219368420632339" type="Anaconda">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="912637836324646" type="Anaconda">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="521297986046758">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="894864795029189" type="Anaconda">
+                            <param id="0" name="Instance variable">LifeCobra</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="485863661923570" type="Anaconda" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="444311038736407" title="Mapinguari">
+            <sub-events>
+                <event-block sid="177516880016073">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="940126335714606" type="Mapinguari">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="303170258396856" type="Mapinguari">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="467041347363774">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="562091248417640" type="Mapinguari">
+                            <param id="0" name="Object">Indio</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="115125346479862" type="System">
+                            <param id="0" name="Interval (seconds)">1.5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="960584455457215" type="Mapinguari">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="618179415323044">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="454309440452226" type="Mapinguari">
+                            <param id="0" name="Instance variable">LifeMapi</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="496025173317204" type="Mapinguari" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
